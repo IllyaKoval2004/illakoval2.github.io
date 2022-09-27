@@ -14,7 +14,6 @@ function checkForm(el) {
     }
     else {
         if(confirm('Підтвердити надсилання форми?')){
-            console.log(name + ', ' + phone + ', ' + ', ' + email);
             alert("Форму записано");
             return true; 
         }
