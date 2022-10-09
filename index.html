@@ -1,29 +1,69 @@
-<!DOCTYPE HTML>
-<html lang="uk">
-  <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Коваль І.Ю. ПІ 19-02</title>
-    <link type="image/png" sizes="16x16" rel="icon" href="img/icons8-github-16.png">
-    <link rel="stylesheet" type="text/css" href="css/reset.css" />
-    <link rel="stylesheet" type="text/css" href="css/style.css" />
-  </head>
-  <body>
-    <div class="container">
-      <div class="header"> 
-        <img src="https://www.kindpng.com/picc/m/128-1280187_github-logo-png-github-transparent-png.png">
-      </div>
-      <div class="content">
-        <div class="five"><h1>Лабораторні роботи:</h1></div>
-        <a class="created" href="lr1/lr1.html">Лабораторна №1</a>
-        <a class="created" href="lr2/lr2.html">Лабораторна №2</a>
-        <a class="coming_soon" href="#">Лабораторна №3</a>
-        <div class="five"><h1>Практичні роботи:</h1></div>
-        <a class="created" href="pr1/p1.html">Практична №1</a>
-        <a class="coming_soon" href="#">Практична №2</a>
-        <a class="coming_soon" href="#">Практична №3</a>
-      </div>
-    </div>
-  </body>
+<!DOCTYPE html>
+<html>
+    
+	<head>
+		<title>CSS3 Transitions and Animations — Practice</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="utf-8">
+        <link href="css/reset.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300" rel="stylesheet">
+		<link href="css/style.css" rel="stylesheet">
+	</head>
+    
+    <body>
+        
+        <h2>Concert Map</h2>
+        
+        <div id="concert-map">
+            <div class="pin madrid">
+                <span class="town">Madrid</span>
+                <div class="popover">
+                    <p class="place">Wizink Center</p>
+                    <p class="date">October 7, 2017</p>
+                    <a class="button" id="a" href="#">Buy tickets</a>
+                </div>
+            </div>
+            
+            <div class="pin turin">
+                <span class="town">Turin</span>
+                <div class="popover">
+                    <p class="place">Pala Alpitour</p>
+                    <p class="date">October 14, 2017</p>
+                    <a class="button" id="a1" href="#">Buy tickets</a>
+                </div>
+            </div>
+            <div class="pin hamburg">
+                <span class="town">Hamburg</span>
+                <div class="popover">
+                    <p class="place">Barclaycard Arena</p>
+                    <p class="date">November 6, 2017</p>
+                    <a class="button" id="a2" href="#">Buy tickets</a>
+                </div>
+            </div>
+            <div class="pin krakow">
+                <span class="town">Kraków</span>
+                <div class="popover">
+                    <p class="place">Tauron Arena</p>
+                    <p class="date">November 12, 2017</p>
+                    <a class="button" id="a3" href="#">Buy tickets</a>
+                </div>
+            </div>
+        </div>
+        <a style="text-align: center; color: #fafafa; display: block;" href="http://www.idg.net.ua/blog/uchebnik-css/ispolzovanie-css/praktika-css-animatsiya">Back to lesson</a>
+        <form id="main-form" onsubmit="return checkForm(this)" method="post">
+            <fieldset> 
+                <legend>Buy tickets</legend>
+                <label>Name </label>
+                <input type="text" name="name" id="name">
+                <label>Phone number</label>
+                <input type="tel" name="phone" id="phone">
+                <label>E-mail</label>
+                <input type="email" name="email" id="email">
+                <input class="smb" type="submit" name="submit_btn" value="Submit">
+                <input class="smb right" id="cancel" type="submit" name="cancel_btn" value="Cancel" onclick="location.reload(); return false;">
+            </fieldset> 
+        </form>
+        <script src="form-hide.js"></script>
+        <script src="form-app.js"></script>
+    </body>
 </html>
